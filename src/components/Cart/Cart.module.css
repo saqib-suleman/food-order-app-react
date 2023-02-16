@@ -1,0 +1,58 @@
+.cart {
+  position: fixed;
+  left: 50%;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  width: 60rem;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  z-index: 100;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 8rem;
+  margin-left: 1.5rem;
+  background-color: #8a310e;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    /* transform: translateY(-3rem); */
+  }
+  to {
+    opacity: 1;
+    /* transform: translateY(0); */
+  }
+}
